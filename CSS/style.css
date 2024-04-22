@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Alegreya", serif;
+}
+
+/* ===========> Global rules */
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+/* ===========> Navbar */
+
+.navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99999999;
+  background-color: #0005;
+}
+
+.navbar .container {
+  margin-top: 0;
+  text-align: left;
+  padding: 8px;
+}
+
+.navbar .logo {
+  width: 150px;
+  float: left;
+}
+
+.navbar .logo a {
+  display: inline-block;
+  width: 100%;
+}
+
+.navbar .logo a img {
+  width: 100%;
+}
+
+.navbar ul {
+  float: right;
+}
+.navbar ul li {
+  float: left;
+  padding: 15px;
+}
+
+.navbar ul li a {
+  font-size: 18px;
+  font-family: "Alegreya", serif;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+/* ===========> Home */
+
+.home {
+  height: 100vh;
+  background-image: url(../images/main-bg.jpg);
+  background-size: cover;
+  background-position: 0%;
+  color: #fff;
+}
+
+.overlay {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1px;
+}
+
+.container {
+  width: 85%;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.home .container {
+  margin-top: 15%;
+}
+
+.home p:nth-of-type(1) {
+  font-size: 22px;
+}
+
+.home h1 {
+  font-size: 65px;
+  padding-block: 15px;
+}
+
+.home p:nth-of-type(2) {
+  font-size: 25px;
+}
+
+.home a {
+  /* => inline non replaced*/
+  display: inline-block;
+  padding: 12px 18px;
+  font-size: 18px;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.home a:nth-of-type(1) {
+  background-color: #8e7754;
+  margin-right: 10px;
+  border: 2px solid #8e7754;
+}
+
+.home a:nth-of-type(2) {
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.icon {
+  width: 40px;
+  height: 60px;
+  margin-top: 150px;
+  margin-inline: auto;
+  border: 2px solid #fff;
+  border-radius: 20px;
+}
+
+.icon span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+/* ===========> Our baking */
+
+.baking {
+  padding-block: 70px;
+}
+
+.baking h2 {
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+.baking .cards {
+  padding-top: 20px;
+}
+.baking .item {
+  width: calc(100% / 3);
+  float: left;
+  padding: 20px;
+}
+
+.baking .item h3 {
+  font-size: 18px;
+  padding-block: 10px;
+}
+
+.baking .item img {
+  width: 100%;
+}
+
+/* ===========> Contact */
+
+.contact {
+  padding-block: 70px;
+  background-color: #eee;
+}
+
+.contact .container > div {
+  width: 50%;
+  float: left;
+}
+
+.contact-body {
+  text-align: left;
+}
+
+.contact-body h2 {
+  font-size: 28px;
+}
+
+.contact-body h2 + p {
+  padding-block: 20px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+address {
+  font-style: normal;
+}
+
+.contact-body address h3 {
+  padding-bottom: 10px;
+}
+
+.contact-body li {
+  padding-block: 10px;
+}
+
+.contact-body address ul i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #8e7754;
+  color: #fff;
+  margin-right: 10px;
+  line-height: 40px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.contact-body address ul i + * {
+  font-size: 19px;
+}
+
+.contact-body address ul i + a {
+  color: #000;
+}
+
+/* ===========> Footer */
+
+.footer {
+  padding-block: 40px;
+  background-color: #403d38;
+  color: #fff;
+}
+.footer .container {
+  text-align: left;
+}
+
+.footer .container > div {
+  width: calc(100% / 4);
+  float: left;
+  padding: 15px;
+}
+
+.footer .container > div h3 {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.footer .about-us p {
+  line-height: 1.6;
+  padding-bottom: 10px;
+}
+
+.footer .container ul li {
+  padding-block: 8px;
+  font-size: 19px;
+}
+.footer .container ul li:not(:last-child) {
+  border-bottom: 1px solid #555;
+}
+
+.footer .container ul li i {
+  padding-right: 8px;
+}
+
+.footer .contact-details a {
+  color: #fff;
+}
+
+/* ===========> Copyright */
+.copyright {
+  background-color: #353330;
+  color: #fff;
+  padding-block: 20px;
+}
+
+.copyright img {
+  width: 150px;
+}
+
+.copyright p {
+  padding-block: 10px;
+  font-size: 18px;
+}
+
+.copyright ul {
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.copyright ul li {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d4b47;
+  float: left;
+  margin-inline: 10px;
+  transition: background-color 400ms;
+}
+
+.copyright li:hover {
+  background-color: #d63;
+}
+
+.copyright ul li i {
+  line-height: 40px;
+}

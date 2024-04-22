@@ -1,0 +1,2 @@
+font family : Alegreya + Alegreya sans-serif
+brown-color: #8e7754;
